@@ -18,13 +18,10 @@ async function checkAndBook() {
   let browser;
   try {
     const browser = await puppeteer.connect({
-      browserWSEndpoint: 'ws://evolution_browserless:3000',       // Sin ?token
+      browserWSEndpoint: 'wss://evolution-browserless.ej5nry.easypanel.host/debugger/?token=f8739ea8ce80b7350283ff8adf10ca9c',
       ignoreHTTPSErrors: true,
-      headers: {
-        // Aquí envías el token en la cabecera que Browserless espera
-        Authorization: `Bearer f8739ea8ce80b7350283ff8adf10ca9c`
-      }
     });
+    
     
 
     const page = await browser.newPage();
