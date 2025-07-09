@@ -19,7 +19,7 @@ async function checkAndBook() {
   try {
     browser = await puppeteer.connect({
       browserWSEndpoint:
-        'ws://evolution_browserless:3000/debugger/?token=f8739ea8ce80b7350283ff8adf10ca9c',
+        'ws://evolution_browserless:3000/debugger/ws?token=f8739ea8ce80b7350283ff8adf10ca9c',
       ignoreHTTPSErrors: true
     });
 
