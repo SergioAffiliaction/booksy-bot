@@ -19,7 +19,7 @@ async function checkAndBook() {
   try {
     browser = await puppeteer.connect({
       browserWSEndpoint:
-        'wss://evolution-browserless.ej5nry.easypanel.host?token=f8739ea8ce80b7350283ff8adf10ca9c',
+      'ws://browserless:3000?token=f8739ea8ce80b7350283ff8adf10ca9c',
       ignoreHTTPSErrors: true
     });
 
