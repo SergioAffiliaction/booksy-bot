@@ -1,0 +1,10 @@
+{
+    "name": "booksy-bot",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "dependencies": {
+      "puppeteer-core": "^20.0.0"
+    }
+  }
+  
